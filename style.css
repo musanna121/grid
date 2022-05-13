@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+}
+body{
+    background-image: url("./images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px;
+}
+.window{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "mail mail box box photo more store store"
+    "skype call temp temp edge what store store"
+    "books cloud weather weather man man pen pen"
+    "flower flower weather weather comic comic video nuts";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.window .item{
+    color: white;
+}
+.window .item p{
+    color: white;
+    margin-top: 150px;
+    margin-left: 5px;
+}
+
+.window .one{
+    grid-area: mail;
+    background-color: rgb(22, 105, 212) ;
+}
+.window .two{
+    grid-area:box;
+    background-color: rgb(66, 12, 216);
+}
+.window .three{
+    grid-area: photo;
+    background-color: rgb(22, 214, 221);
+}
+.window .four{
+    grid-area: more;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "game music"
+    "camera mic";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.window .four .game{
+    grid-area: game;
+    background-color: rgb(10, 153, 75);
+}
+.window .four .camera{
+    grid-area: camera;
+    background-color: rgb(115, 153, 10);
+}
+.window .four .mic{
+    grid-area: mic;
+    background-color: rgb(10, 55, 153);
+}
+.window .four .music{
+    grid-area: music;
+    background-color: rgb(129, 10, 153);
+}
+.window .five{
+    grid-area: store;
+    background-color: green;
+}
+.window .five p{
+    margin-top: 335px;
+}
+.window .six{
+    grid-area: skype;
+    background-color: rgb(51, 139, 255);
+}
+.window .seven{
+    grid-area: call;
+    background-color: rgb(211, 71, 15);
+}
+.window .eight{
+    grid-area: temp;
+    background-color: rgb(26, 145, 10);
+}
+.window .nine{
+    grid-area: edge;
+    background-color: rgb(15, 91, 163);
+}
+.window .ten{
+    grid-area: what;
+    background-color: rgb(214, 92, 21);
+}
+.window .el{
+    grid-area: books;
+    background-color: rgb(206, 17, 48);
+}
+.window .tw{
+    grid-area: cloud;
+    background-color: rgb(15, 91, 163);
+}
+.window .th{
+    grid-area: weather;
+    background-color: rgb(78, 169, 255);
+}
+.window .th p{
+    margin-top: 335px;
+
+}
+.window .fr{
+    grid-area: man;
+    background-color: rgb(88, 17, 155);
+}
+.window .fifteen{
+    grid-area: pen;
+    background-color: rgb(29, 93, 153);
+}
+.window .sixteen{
+    grid-area: flower;
+    background-color: rgb(0, 0, 0);
+}
+.window .seventeen{
+    grid-area: comic;
+    background-color: rgb(92, 13, 37);
+}
+.window .eighteen{
+    grid-area: video;
+    background-color: rgb(184, 9, 146);
+}
+.window .nineteen{
+    grid-area: nuts;
+    background-color: rgb(187, 83, 14);
+}
